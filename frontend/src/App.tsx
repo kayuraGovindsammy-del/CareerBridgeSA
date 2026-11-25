@@ -9,6 +9,8 @@ import {
 import Navbar from './components/layout/NavBar'
 import Footer from './components/layout/Footer';
 import Home from './pages/Home';
+import Opportunities from './pages/Opportunities';
+import OpportunityDetails from './pages/OpportunityDetails';
 
 function ComingSoon({ title }: { title: string }) {
   return (
@@ -42,9 +44,14 @@ export default function App() {
             <Route path="/" element={<Home />} />
 
             <Route
-              path="/opportunities"
-              element={<ComingSoon title="Find Opportunities" />}
-            />
+  path="/opportunities"
+  element={<Opportunities />}
+/>
+
+<Route
+  path="/opportunities/:id"
+  element={<OpportunityDetails />}
+/>
 
             <Route
               path="/providers"

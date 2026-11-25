@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import FeaturedOpportunities from '../components/opportunities/FeaturedOpportunities';
 import {
   ArrowRight,
   Search,
@@ -330,6 +331,7 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <FeaturedOpportunities />
     </main>
   );
 }
